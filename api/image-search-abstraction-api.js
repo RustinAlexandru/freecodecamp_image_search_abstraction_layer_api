@@ -38,7 +38,7 @@ module.exports = function(app, db) {
                                };
                             });
                             
-                    res.send(JSON.stringify(imgObjs, null, 3));
+                    res.send(imgObjs);
                     }
                     )
                     .catch(err => res.send({error: err}));
